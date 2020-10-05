@@ -547,7 +547,7 @@ function search_file() {
 
 function anim_logo(file) {
     m_app.css_animate(_logo_container, "opacity", 0, 1, LOGO_SHOW_DELAY, "", "", function() {
-        _preloader_caption.style.display = "block";
+        _preloader_caption.style.display 
         m_app.css_animate(_preloader_caption, "opacity", 0, 1, CAPTION_SHOW_DELAY, "", "", function() {
             m_main.resume();
             m_data.load(file, loaded_callback, preloader_callback, false);
